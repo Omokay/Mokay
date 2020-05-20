@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Header from '../Header/header.component'
 import './landing.styles.scss'
 
 
@@ -8,7 +9,7 @@ class Landing extends Component {
 
         this.state = {
             loader: true,
-            welcomeText: 'Welcome...',
+            welcomeText: '',
         }
     }
     
@@ -20,7 +21,7 @@ class Landing extends Component {
     render() {
         return (
             <div className='landing-page'>
-                
+                <Header />
             </div>
         )
     }
