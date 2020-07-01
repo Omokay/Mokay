@@ -15,37 +15,47 @@
       }
     }
     .hamburger {
-      position: absolute;
+      position: fixed;
       top: 20px;
       right: 40px;
-      color: black;
+      color: white;
+      z-index: 6;
       &:hover {
         cursor: pointer;
       }
     }
 
-    .sideNav {
-      position: absolute;
-      top: 70px;
-      right: 35px;
-      padding: 40px 20px;
+    .navShowing {
+      height: 100%;
+      width: 500px;
+      position: fixed;
       z-index: 5;
-      width: 200px;
-      
+      top: 0;
+      right: 0;
+      background-color: rgb(236, 233, 233);
+      overflow-x: hidden;
+      padding-top: 60px;
+      transition: 0.5s;
 
-
+      .closeBtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
       li {
         list-style: none;
-        width: 100%;
-        padding: 20px 20px;
-        font-weight: 500;
-        text-transform: uppercase;
-        text-align: center;
-        color: #21206C;
-        
+        padding: 8px 15px 8px 32px;
+        margin: 10px 0 0 10px;
+        font-size: 25px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+
         a {
           text-decoration: none;
-          color: #000;
+          color: white;
           width: 100%;
         }
       }

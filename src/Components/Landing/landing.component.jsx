@@ -10,7 +10,7 @@ class Landing extends Component {
 
         this.state = {
             loader: true,
-            welcomeText: '',
+            welcomeText: ''
         }
     } 
     
