@@ -5,21 +5,13 @@
     .rotate {
       animation: rotation 8s infinite linear;
     }
-    .nav-brand {
-      position: absolute;
-      top: 20px;
-      left: 40px;
-
-      &:hover {
-        cursor: pointer;
-      }
-    }
-    .hamburger {
+  
+    .hambg {
       position: fixed;
-      top: 20px;
-      right: 40px;
+      top: 30px;
+      right: 60px;
       color: white;
-      z-index: 6;
+      z-index: 5;
       &:hover {
         cursor: pointer;
       }
@@ -29,34 +21,24 @@
       height: 100%;
       width: 500px;
       position: fixed;
-      z-index: 5;
+      z-index: 4;
       top: 0;
       right: 0;
-      background-color: rgb(236, 233, 233);
+      background-color: rgb(0, 0, 0);
       overflow-x: hidden;
       padding-top: 60px;
       transition: 0.5s;
+      cursor: default;
 
-      .closeBtn {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 36px;
-        margin-left: 50px;
-      }
-      li {
+      .navItems {
         list-style: none;
         padding: 8px 15px 8px 32px;
-        margin: 10px 0 0 10px;
         font-size: 25px;
         color: white;
         display: block;
         transition: 0.3s;
-
-        a {
-          text-decoration: none;
-          color: white;
-          width: 100%;
+        &:hover {
+          cursor: pointer;
         }
       }
     }
