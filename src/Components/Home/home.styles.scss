@@ -12,20 +12,31 @@
     float: none;
     margin-top: 80px;
     .left-text {
-       padding: 100px 60px;
+       padding: 100px 100px;
       .main-text {
-        font-size: 2.3rem;
+        font-size: 3.2rem;
         line-height: 1.5;
       }
       .sub-text {
-        font-size: 2.8rem;
+        font-size: 2.0rem;
         line-height: 1.5;
+        color: #801336;
       }
+      .action-buttons {
+          max-width: 330px;
+          display: flex;
+          justify-content: space-between;
+          padding: 15px 0;
+          margin: 0;
+      }
+    }
+    .right-text {
+        //background-color: rgba(211, 211, 211, 0.123);
     }
   }
 
   .follow-text {
-    margin-top: 220px;
+    margin-top: 150px;
   }
 
   .sm-list {
@@ -36,7 +47,7 @@
     height: auto;
 
     .icons {
-      color: rgb(31, 30, 30);
+      color: #2d132c;
       font-weight: 100;
       transition: 0.5s ease-in-out;
 
