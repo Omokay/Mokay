@@ -12,26 +12,27 @@ const Home = () => {
   return (
     <div className='home'>
       <div className=' row rrow'>
-        <div className='col-md-8 column  align-self-center'>
+        <div className='col-sm-12 column'>
           <div className='left-text'>
             <h2 className='main-text'>Hi,
                       My name is Omoke.</h2>
             <div className='sub-text'>I am a Software Developer</div>
             <div className='action-buttons'>
               <div className='learn-more'>
-                <ActionButton>Learn More</ActionButton>
-              </div>
+                    <ActionButton>Learn more</ActionButton>
+                </div>
               <div className='hire-gig'>
-                <ActionButton2>Hire me for a gig</ActionButton2>
-              </div>
+                    <ActionButton2>Hire me</ActionButton2>
+                </div>
             </div>
           </div>
         </div>
-        <div className='col-md-4 right-text'>
+        {/* <div className='col-md-4 right-text'>
           
 
-        </div>
+        </div> */}
       </div>
+      
       <div className='row'>
         <div className='col-md-12 text-center'>
           <p className='follow-text text-center'>Follow me</p>

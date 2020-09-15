@@ -1,37 +1,41 @@
 .home {
   width: 100vw;
-  height: 100vh;
+  height: auto;
   position: relative;
   padding: 60px 20px;
   background: white;
-  background-image: url('../../assets/expp.svg');
+  background-image: url("../../assets/expp.svg");
   background-repeat: no-repeat;
 
   .rrow {
-    
-    float: none;
+    //float: none;
     margin-top: 80px;
-    .left-text {
-       padding: 100px 100px;
+    .column {
+      .left-text {
+      padding: 100px 100px;
       .main-text {
         font-size: 3.2rem;
         line-height: 1.5;
       }
       .sub-text {
-        font-size: 2.0rem;
+        font-size: 2rem;
         line-height: 1.5;
         color: #801336;
       }
       .action-buttons {
-          max-width: 330px;
-          display: flex;
-          justify-content: space-between;
-          padding: 15px 0;
-          margin: 0;
+        width: 400px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        display: flex;
+
+        .learn-more {
+          float: left;
+        }
+        .hire-gig {
+          float: right;
+        }
       }
     }
-    .right-text {
-        //background-color: rgba(211, 211, 211, 0.123);
     }
   }
 
@@ -51,10 +55,13 @@
       font-weight: 100;
       transition: 0.5s ease-in-out;
 
-      &:hover{
-          cursor: pointer;
-          transform: scale(1.1);
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
       }
     }
   }
+}
+
+@media screen and (max-width: 500px) {
 }
