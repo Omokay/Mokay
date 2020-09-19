@@ -9,7 +9,7 @@
 
   .rrow {
     //float: none;
-    margin-top: 80px;
+    margin-top: 50px;
     .column {
       .left-text {
       padding: 100px 100px;
@@ -17,10 +17,24 @@
         font-size: 3.2rem;
         line-height: 1.5;
       }
+      .blinking-cursor {
+        font-size: 3.5rem;
+        color: #000;
+        pointer-events: none;
+        user-select: none;
+        animation: blink 1s steps(2, start) infinite;
+  
+        @keyframes blink{
+          to {
+            visibility: hidden;
+          }
+        }
+            
+      }
       .sub-text {
         font-size: 2rem;
         line-height: 1.5;
-        color: #801336;
+        color: #2d132c;
       }
       .action-buttons {
         width: 400px;
@@ -40,13 +54,13 @@
   }
 
   .follow-text {
-    margin-top: 150px;
+    margin-top: 80px;
   }
 
   .sm-list {
     display: flex;
     justify-content: space-between;
-    margin: 40px auto;
+    margin: 20px auto;
     width: 200px;
     height: auto;
 

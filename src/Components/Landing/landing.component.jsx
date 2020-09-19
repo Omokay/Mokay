@@ -7,11 +7,6 @@ import Home from '../Home/home.component';
 class Landing extends Component {
     constructor(props) {
         super(props);
-
-        this.state = {
-            loader: true,
-            welcomeText: ''
-        }
     } 
     
     componentDidMount() {
