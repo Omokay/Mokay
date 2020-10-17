@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Header from '../Header/header.component'
 import './landing.styles.scss'
-import Home from '../Home/home.component';
 
 
 class Landing extends Component {
@@ -18,7 +17,6 @@ class Landing extends Component {
         return (
             <div className='landing-page'>
                 <Header />
-                <Home />
             </div>
         )
     }

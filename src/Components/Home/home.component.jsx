@@ -1,9 +1,4 @@
-import  React, { Component } from 'react';
-
-import { Twitter } from 'react-feather';
-import { Linkedin } from 'react-feather';
-import { Instagram } from 'react-feather';
-import { Youtube } from 'react-feather';
+import React, { Component } from 'react';
 import ActionButton from '../ActionButton/actionButton.component';
 import ActionButton2 from '../ActionButton2/actionButton2.component';
 import './home.styles.scss';
@@ -11,7 +6,7 @@ import './home.styles.scss';
 class Home extends Component {
   constructor(props) {
     super(props);
-    
+
 
   }
 
@@ -38,27 +33,27 @@ class Home extends Component {
     const elementNode = document.getElementById('type-text')
     let text = ''
 
-    function updateNode() {
+    const updateNode = () => {
       elementNode.innerText = text
     }
 
-    function pushCharacter(character) {
+    const pushCharacter = (character) => {
       text += character
       updateNode()
     }
 
-    function popCharacter() {
+    const popCharacter = () => {
       text = text.slice(0, text.length - 1)
       updateNode()
     }
 
-    function clearText() {
+    const clearText = () => {
       text = ''
       updateNode()
     }
 
 
-    function wait(time) {
+    const wait = (time) => {
       if (time === undefined) {
         const randomMsInterval = 100 * Math.random()
         time = randomMsInterval < 50 ? 10 : randomMsInterval
@@ -71,21 +66,21 @@ class Home extends Component {
       })
     }
 
-    function typeCharacter(character) {
+    const typeCharacter = (character) => {
       return new Promise(resolve => {
         pushCharacter(character)
         wait().then(resolve)
       })
     }
 
-    function removeCharacter() {
+    const removeCharacter = () => {
       return new Promise(resolve => {
         popCharacter()
         wait().then(resolve)
       })
     }
 
-    function typeText(text) {
+    const typeText = (text) => {
       return new Promise(resolve => {
 
         function type([character, ...text]) {
@@ -100,10 +95,10 @@ class Home extends Component {
       })
     }
 
-    function removeText({ length: amount }) {
+    const removeText = ({ length: amount }) => {
       return new Promise(resolve => {
 
-        function remove(count) {
+        const remove = (count) => {
           removeCharacter()
             .then(() => {
               if (count > 1) remove(count - 1)
@@ -126,11 +121,11 @@ class Home extends Component {
         <div className=' row rrow'>
           <div className='col-sm-12 column'>
             <div className='left-text'>
-              <h2 className='main-text'>
-                Hi. <br/>
-                <span id="type-text">...</span> 
-                <span className='blinking-cursor'>_</span>.</h2>
-              
+              <p className='main-text'>
+                Hi. <br />
+                <span id="type-text">...</span>
+                <span className='blinking-cursor'>_</span></p>
+
               <div className='sub-text'>I am a Software Developer</div>
               <div className='action-buttons'>
                 <div className='learn-more'>
@@ -142,13 +137,9 @@ class Home extends Component {
               </div>
             </div>
           </div>
-          {/* <div className='col-md-4 right-text'>
-          
-
-        </div> */}
         </div>
 
-        <div className='row'>
+        {/* <div className='row'>
           <div className='col-md-12 text-center'>
             <p className='follow-text text-center'>Follow me</p>
             <div className='sm-list'>
@@ -158,7 +149,7 @@ class Home extends Component {
               <Youtube className='icons' />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     )
   }

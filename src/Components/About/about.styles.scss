@@ -1,0 +1,26 @@
+.about {
+  width: 100vw;
+  height: auto;
+  position: relative;
+  padding: 60px 20px;
+  background: white;
+  background-image: url("../../assets/expp.svg");
+  background-repeat: no-repeat;
+    .aboutme {
+        padding: 100px;
+        font-weight: 600;
+        font-size: 2.8rem;
+        .column-about {
+            padding-top: 100px;
+            color: black;
+            .metext {
+                color: gray;
+            }
+        }
+            .abouttext {
+                font-size: 1.2rem;
+                font-weight: 300;
+                color: rgb(109, 109, 109);
+            }
+    }
+}

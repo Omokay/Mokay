@@ -12,69 +12,79 @@
     margin-top: 50px;
     .column {
       .left-text {
-      padding: 100px 100px;
-      .main-text {
-        font-size: 3.2rem;
-        line-height: 1.5;
-      }
-      .blinking-cursor {
-        font-size: 3.5rem;
-        color: #000;
-        pointer-events: none;
-        user-select: none;
-        animation: blink 1s steps(2, start) infinite;
-  
-        @keyframes blink{
-          to {
-            visibility: hidden;
+        padding: 100px 100px;
+
+        .main-text {
+          font-size: 2.8rem;
+          line-height: 1.5;
+          font-weight: 600;
+        }
+        .blinking-cursor {
+          font-size: 3.5rem;
+          color: #000;
+          pointer-events: none;
+          user-select: none;
+          animation: blink 1s steps(2, start) infinite;
+
+          @keyframes blink {
+            to {
+              visibility: hidden;
+            }
           }
         }
-            
-      }
-      .sub-text {
-        font-size: 2rem;
-        line-height: 1.5;
-        color: #2d132c;
-      }
-      .action-buttons {
-        width: 400px;
-        padding-top: 30px;
-        padding-bottom: 20px;
-        display: flex;
-
-        .learn-more {
-          float: left;
+        .sub-text {
+          font-size: 2rem;
+          line-height: 1.5;
+          color: #2d132c;
         }
-        .hire-gig {
-          float: right;
+        .action-buttons {
+          width: 400px;
+          padding-top: 30px;
+          padding-bottom: 20px;
+          display: flex;
+
+          .learn-more {
+            float: left;
+          }
+          .hire-gig {
+            float: right;
+          }
         }
       }
     }
-    }
+    // .right-text {
+    //   background-image: url("../../assets/ava.png");
+    //   width: 100px;
+    //   .image {
+    //     height: 50px;
+    //     width: auto;
+        
+    //   }
+    // }
   }
 
-  .follow-text {
-    margin-top: 80px;
-  }
+  // .follow-text {
+  //   margin-top: 80px;
+  // }
 
-  .sm-list {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px auto;
-    width: 200px;
-    height: auto;
+  // .sm-list {
+  //   display: flex;
+  //   justify-content: space-between;
+  //   margin: 20px auto;
+  //   width: 200px;
+  //   height: auto;
 
-    .icons {
-      color: #2d132c;
-      font-weight: 100;
-      transition: 0.5s ease-in-out;
+  //   .icons {
+  //     color: #2d132c;
+  //     font-weight: 100;
+  //     transition: 0.5s ease-in-out;
 
-      &:hover {
-        cursor: pointer;
-        transform: scale(1.1);
-      }
-    }
-  }
+  //     &:hover {
+  //       cursor: pointer;
+  //       transform: scale(1.1);
+  //     }
+  //   }
+  // }
 }
 
 @media screen and (max-width: 500px) {
